@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>محمد امین — صفحه اصلی</title>
+  <meta name="description" content="سایت شخصی محمد امین — ترید، کتاب‌ها، ابزارها و تماس" />
+  <!-- فونت فارسی Vazir -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v31.1.0/dist/font-face.css">
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1724; --accent:#2563eb; --muted:#9aa4b2;
+      --ft-family: 'Vazir', sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:var(--ft-family);background:var(--bg);color:#e6eef8}
+    .container{max-width:920px;margin:32px auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .brand{font-size:1.25rem;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:12px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    footer{color:var(--muted);font-size:0.9rem;text-align:center;margin-top:28px}
+    @media(min-width:760px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">mohammadamin.fx</div>
+      <nav>
+        <a href="#about">درباره</a>
+        <a href="#blog">بلاگ</a>
+        <a href="#contact">تماس</a>
+      </nav>
+    </header>
+
+    <section class="hero card">
+      <h1>سلام — من محمد امین</h1>
+      <p style="color:var(--muted)">تریدر فارکس • ابزارها و راهنمایی‌ها • هایلایت‌ها و سیگنال‌ها (آینده)</p>
+      <p>
+        <a class="btn" href="#contact">تماس / تلگرام</a>
+      </p>
+    </section>
+
+    <section id="about" class="grid">
+      <div class="card">
+        <h3>درباره من</h3>
+        <p style="color:var(--muted)">توضیحات کوتاه دربارهٔ تجربهٔ ترید و هدف صفحه.</p>
+      </div>
+      <div class="card">
+        <h3>هایلایت‌ها</h3>
+        <ul style="color:var(--muted)">
+          <li>TRADING</li>
+          <li>LIFE</li>
+          <li>BOOKS</li>
+          <li>TOOLS</li>
+          <li>Q&A</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="blog" class="card" style="margin-top:16px">
+      <h3>نوشته‌ها</h3>
+      <p style="color:var(--muted)">لیست پست‌ها یا خلاصهٔ لینک‌ها اینجا قرار می‌گیرد.</p>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:16px">
+      <h3>تماس</h3>
+      <p style="color:var(--muted)">تلگرام: <a href="https://t.me/orgmohamad" style="color:inherit">t.me/orgmohamad</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> mohammadamin.fx — All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
