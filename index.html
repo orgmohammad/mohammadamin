@@ -1,126 +1,207 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mohammadamin.fx</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Amin FX</title>
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; text-align:center; }
-    header { 
-      background:url('https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg') no-repeat center center/cover; 
-      padding:80px 20px; 
+    body {
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: url("assets/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg") no-repeat center center/cover;
+      color: #fff;
+      line-height: 1.6;
     }
-    header img { width:120px; height:120px; border-radius:50%; border:3px solid gold; object-fit:cover; }
-    header h1 { margin:20px 0 0; font-size:28px; color:gold; }
-    section { padding:60px 20px; }
-    h2 { color:gold; margin-bottom:20px; }
-    .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
-    .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
-    .contact-info { margin:15px 0; font-size:18px; }
-    .contact-info i { margin-right:10px; color:gold; }
-    .cta-buttons { margin-top:20px; display:flex; justify-content:center; gap:15px; }
-    .cta-buttons a { padding:12px 20px; border-radius:30px; background:gold; color:#111; font-weight:bold; text-decoration:none; transition:0.3s; }
-    .cta-buttons a:hover { background:#ffcc00; }
-    footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #FFD700;
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 2rem;
+      color: #FFD700;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #FFD700;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
 
-    /* نمونه کارها */
-    #portfolio { padding:60px 20px; background:#111; }
-    #portfolio h2 { color:gold; margin-bottom:30px; }
-    .portfolio { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .p-card { background:#222; border-radius:15px; width:320px; overflow:hidden; box-shadow:0 0 12px rgba(255,215,0,0.3); transition:0.3s; }
-    .p-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
-    .p-card img { width:100%; height:200px; object-fit:cover; display:block; }
-    .p-card h3 { margin:15px 0 10px; color:gold; }
-    .p-card p { font-size:14px; padding:0 15px 20px; color:#ccc; }
-    @media (max-width:800px){ .p-card{ width:100%; max-width:420px } }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.65);
+      margin: 20px;
+      border-radius: 12px;
+    }
+    section h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: rgba(20,20,20,0.9);
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+    }
+
+    /* Portfolio */
+    .portfolio {
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+      padding:10px 20px;
+    }
+    .portfolio .p-card {
+      background: linear-gradient(180deg, rgba(26,26,26,0.96), rgba(18,18,18,0.96));
+      border-radius:14px;
+      overflow:hidden;
+      width:320px;
+      text-align:center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,215,0,0.02) inset;
+      transition: transform .45s cubic-bezier(.2,.9,.2,1), box-shadow .45s ease, background .3s ease;
+      cursor:pointer;
+      will-change: transform;
+    }
+    .portfolio .p-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      display:block;
+      transition: transform .6s cubic-bezier(.2,.9,.2,1), filter .4s ease;
+      transform-origin:center center;
+      backface-visibility:hidden;
+    }
+    .portfolio .p-card .meta{ padding:14px; }
+    .portfolio .p-card h3{ margin:8px 0; color:#FFD700; font-size:1.05rem; }
+    .portfolio .p-card p{ margin:0; color:#cfcfcf; font-size:0.95rem; line-height:1.4; }
+    .portfolio .p-card:hover{
+      transform: translateY(-12px) scale(1.01);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(255,215,0,0.20);
+    }
+    .portfolio .p-card:hover img{
+      transform: scale(1.10) translateY(-3px);
+      filter: saturate(1.05) contrast(1.03);
+    }
+    .portfolio .p-card:focus{
+      outline: none;
+      transform: translateY(-10px);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.55), 0 0 30px rgba(255,215,0,0.18);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+    }
+    footer a {
+      color: #FFD700;
+      margin: 0 10px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-
-  <!-- هدر -->
   <header>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
-      <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-01_13-58-33.jpg" alt="mohammadamin.fx" class="logo">
-      <h1>mohammadamin.fx</h1>
-    </div>
+    <img src="assets/photo_2025-09-01_13-58-33.jpg" alt="Logo">
+    <h1>mohammadamin.fx</h1>
+    <nav>
+      <a href="#services">خدمات</a>
+      <a href="#about">درباره من</a>
+      <a href="#portfolio">نمونه‌کارها</a>
+      <a href="#contact">ارتباط</a>
+    </nav>
   </header>
 
-  <!-- خدمات -->
   <section id="services">
     <h2>خدمات من</h2>
     <div class="services">
       <div class="card">
         <h3>آموزش 0 تا 100 فارکس</h3>
-        <p>یادگیری کامل بازار فارکس از مفاهیم پایه تا پیشرفته.</p>
+        <p>شروع از پایه تا حرفه‌ای شدن در بازار فارکس.</p>
       </div>
       <div class="card">
-        <h3>آموزش استراتژی شخصی</h3>
-        <p>آموزش استراتژی اختصاصی من برای معاملات دقیق‌تر.</p>
+        <h3>استراتژی شخصی</h3>
+        <p>یادگیری استراتژی‌های معاملاتی اختصاصی.</p>
       </div>
       <div class="card">
-        <h3>سیگنال معاملات شخصی</h3>
-        <p>دریافت سیگنال‌های معاملاتی واقعی و شخصی من.</p>
+        <h3>سیگنال شخصی</h3>
+        <p>دریافت سیگنال‌های معاملاتی روزانه.</p>
       </div>
     </div>
   </section>
 
-  <!-- درباره من -->
   <section id="about">
     <h2>درباره من</h2>
     <p>
-      من محمد امین هستم؛ تریدر و مدرس بازارهای مالی با چندین سال تجربه در فارکس.
-      هدف من آموزش اصولی و ارائه استراتژی‌های شخصی‌سازی‌شده است تا معامله‌گران
-      بتونن با مدیریت ریسک صحیح، به سودآوری پایدار برسن.  
-      باور دارم موفقیت در معامله‌گری نتیجه‌ی صبر، نظم و یادگیری مستمره.
+      من محمدامین هستم، با سال‌ها تجربه در بازارهای مالی.  
+      هدف من آموزش حرفه‌ای فارکس، ارائه استراتژی‌های شخصی و سیگنال‌های معتبر برای معامله‌گران است.
     </p>
   </section>
 
-  <!-- نمونه کارها -->
   <section id="portfolio">
     <h2>نمونه‌کارها</h2>
     <div class="portfolio">
       <div class="p-card">
-        <!-- Candlestick chart (dark) -->
-        <img src="https://images.pexels.com/photos/29611783/pexels-photo-29611783.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="نمودار شمعی">
-        <h3>نتیجه معامله — نمودار</h3>
-        <p>تحلیل و اجرای استراتژی روی الگوی شمعی؛ سوددهی هدفمند.</p>
+        <img src="assets/portfolio1.jpg" alt="نمونه کار 1">
+        <div class="meta">
+          <h3>نمونه کار اول</h3>
+          <p>توضیح کوتاه درباره نمونه کار.</p>
+        </div>
       </div>
-
       <div class="p-card">
-        <!-- Trader at laptop (dark) -->
-        <img src="https://images.pexels.com/photos/6770609/pexels-photo-6770609.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="تریدر با لپ‌تاپ">
-        <h3>تریدر در عمل</h3>
-        <p>تصویر تجربه‌ی کار با بازار و تصمیم‌گیری در زمان واقعی.</p>
+        <img src="assets/portfolio2.jpg" alt="نمونه کار 2">
+        <div class="meta">
+          <h3>نمونه کار دوم</h3>
+          <p>توضیح کوتاه درباره نمونه کار.</p>
+        </div>
       </div>
-
       <div class="p-card">
-        <!-- Financial graph modern (dark) -->
-        <img src="https://images.pexels.com/photos/5716052/pexels-photo-5716052.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="گراف مالی">
-        <h3>گراف مالی</h3>
-        <p>استراتژی‌های مبتنی بر داده و تحلیل روندهای بازار.</p>
+        <img src="assets/portfolio3.jpg" alt="نمونه کار 3">
+        <div class="meta">
+          <h3>نمونه کار سوم</h3>
+          <p>توضیح کوتاه درباره نمونه کار.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ارتباط با من -->
   <section id="contact">
     <h2>ارتباط با من</h2>
-    <div class="contact-card">
-      <div class="contact-info"><i class="fas fa-phone"></i> 09120653481</div>
-      <div class="contact-info"><i class="fab fa-telegram"></i> <a href="https://t.me/mohammadaminfxx" target="_blank" style="color:gold">@mohammadamin.fx</a></div>
-      <div class="cta-buttons">
-        <a href="https://t.me/mohammadaminfxx" target="_blank">🚀 پیام بده</a>
-        <a href="tel:09120653481">📞 تماس بگیر</a>
-      </div>
-    </div>
+    <p>📱 09120653481</p>
+    <p>✈️ <a href="https://t.me/mohammadaminfxx" target="_blank">mohammadamin.fx</a></p>
   </section>
 
-  <!-- فوتر -->
   <footer>
-    © 2025 mohammadamin.fx - تمامی حقوق محفوظ است
+    <p>© 2025 MohammadAmin.FX</p>
   </footer>
-
 </body>
 </html>
