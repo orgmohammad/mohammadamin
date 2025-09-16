@@ -3,205 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Amin FX</title>
+  <title>mohammadamin.fx</title>
   <style>
     body {
       margin: 0;
-      font-family: "Tahoma", sans-serif;
-      background: url("assets/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg") no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+      background: #000;
       color: #fff;
-      line-height: 1.6;
+      line-height: 1.8;
     }
-    header {
-      background: rgba(0,0,0,0.7);
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #FFD700;
-    }
-    header h1 {
-      margin: 10px 0 0;
-      font-size: 2rem;
-      color: #FFD700;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    nav a {
-      color: #FFD700;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover { text-decoration: underline; }
 
-    section {
-      padding: 40px 20px;
+    header {
+      background: url("assets/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg") center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      background: rgba(0,0,0,0.65);
-      margin: 20px;
-      border-radius: 12px;
+      color: #fff;
     }
-    section h2 {
-      color: #FFD700;
+
+    header img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #FFD700;
       margin-bottom: 20px;
     }
 
-    /* Services */
-    .services {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: rgba(20,20,20,0.9);
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-      transition: transform .3s ease, box-shadow .3s ease;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+    header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      color: #FFD700;
     }
 
-    /* Portfolio */
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #FFD700;
+    }
+
+    /* درباره من */
+    #about {
+      background: #111;
+    }
+
+    #about p {
+      max-width: 800px;
+      margin: auto;
+      color: #ccc;
+    }
+
+    /* نمونه‌کارها */
+    #portfolio {
+      background: #111;
+    }
+
     .portfolio {
-      display:flex;
-      justify-content:center;
-      gap:25px;
-      flex-wrap:wrap;
-      padding:10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
     }
+
     .portfolio .p-card {
-      background: linear-gradient(180deg, rgba(26,26,26,0.96), rgba(18,18,18,0.96));
-      border-radius:14px;
-      overflow:hidden;
-      width:320px;
-      text-align:center;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,215,0,0.02) inset;
-      transition: transform .45s cubic-bezier(.2,.9,.2,1), box-shadow .45s ease, background .3s ease;
-      cursor:pointer;
-      will-change: transform;
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
     }
-    .portfolio .p-card img{
-      width:100%;
-      height:200px;
-      object-fit:cover;
-      display:block;
-      transition: transform .6s cubic-bezier(.2,.9,.2,1), filter .4s ease;
-      transform-origin:center center;
-      backface-visibility:hidden;
+
+    .portfolio .p-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
     }
-    .portfolio .p-card .meta{ padding:14px; }
-    .portfolio .p-card h3{ margin:8px 0; color:#FFD700; font-size:1.05rem; }
-    .portfolio .p-card p{ margin:0; color:#cfcfcf; font-size:0.95rem; line-height:1.4; }
-    .portfolio .p-card:hover{
-      transform: translateY(-12px) scale(1.01);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(255,215,0,0.20);
+
+    .portfolio .p-card h3 {
+      margin: 15px 0 8px;
+      color: #FFD700;
     }
-    .portfolio .p-card:hover img{
-      transform: scale(1.10) translateY(-3px);
-      filter: saturate(1.05) contrast(1.03);
+
+    .portfolio .p-card p {
+      padding: 0 10px 20px;
+      font-size: 0.9rem;
+      color: #ccc;
     }
-    .portfolio .p-card:focus{
-      outline: none;
-      transform: translateY(-10px);
-      box-shadow: 0 24px 50px rgba(0,0,0,0.55), 0 0 30px rgba(255,215,0,0.18);
+
+    .portfolio .p-card:hover {
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+      transform: translateY(-8px);
+    }
+
+    .portfolio .p-card:hover img {
+      transform: scale(1.08);
+    }
+
+    /* ارتباط با من */
+    #contact {
+      background: #111;
+      padding: 50px 20px;
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
+      background: #000;
       text-align: center;
       padding: 20px;
-      background: rgba(0,0,0,0.8);
-    }
-    footer a {
-      color: #FFD700;
-      margin: 0 10px;
-      text-decoration: none;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
 <body>
+
+  <!-- هدر -->
   <header>
-    <img src="assets/photo_2025-09-01_13-58-33.jpg" alt="Logo">
+    <img src="assets/photo_2025-09-01_13-58-33.jpg" alt="mohammadamin.fx">
     <h1>mohammadamin.fx</h1>
-    <nav>
-      <a href="#services">خدمات</a>
-      <a href="#about">درباره من</a>
-      <a href="#portfolio">نمونه‌کارها</a>
-      <a href="#contact">ارتباط</a>
-    </nav>
+    <p>معامله‌گر و مدرس بازارهای مالی</p>
   </header>
 
-  <section id="services">
-    <h2>خدمات من</h2>
-    <div class="services">
-      <div class="card">
-        <h3>آموزش 0 تا 100 فارکس</h3>
-        <p>شروع از پایه تا حرفه‌ای شدن در بازار فارکس.</p>
-      </div>
-      <div class="card">
-        <h3>استراتژی شخصی</h3>
-        <p>یادگیری استراتژی‌های معاملاتی اختصاصی.</p>
-      </div>
-      <div class="card">
-        <h3>سیگنال شخصی</h3>
-        <p>دریافت سیگنال‌های معاملاتی روزانه.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- درباره من -->
   <section id="about">
     <h2>درباره من</h2>
     <p>
-      من محمدامین هستم، با سال‌ها تجربه در بازارهای مالی.  
-      هدف من آموزش حرفه‌ای فارکس، ارائه استراتژی‌های شخصی و سیگنال‌های معتبر برای معامله‌گران است.
+      من محمد امین هستم، تریدر و مدرس بازارهای مالی با چندین سال تجربه در فارکس. هدف من آموزش اصولی و ارائه استراتژی‌های
+      شخصی‌سازی‌شده است تا معامله‌گران بتوانند با مدیریت ریسک صحیح به سودآوری پایدار برسند. باور دارم موفقیت در معامله‌گری
+      نتیجه‌ی صبر، نظم و یادگیری مستمره.
     </p>
   </section>
 
+  <!-- نمونه‌کارها -->
   <section id="portfolio">
     <h2>نمونه‌کارها</h2>
     <div class="portfolio">
       <div class="p-card">
-        <img src="assets/portfolio1.jpg" alt="نمونه کار 1">
-        <div class="meta">
-          <h3>نمونه کار اول</h3>
-          <p>توضیح کوتاه درباره نمونه کار.</p>
-        </div>
+        <img src="assets/portfolio1.jpg" alt="نمونه اول">
+        <h3>نتیجه معامله — نمودار</h3>
+        <p>تحلیل و اجرای استراتژی روی الگوهای شمعی، سوددهی هدفمند.</p>
       </div>
       <div class="p-card">
-        <img src="assets/portfolio2.jpg" alt="نمونه کار 2">
-        <div class="meta">
-          <h3>نمونه کار دوم</h3>
-          <p>توضیح کوتاه درباره نمونه کار.</p>
-        </div>
+        <img src="assets/portfolio2.jpg" alt="نمونه دوم">
+        <h3>تریدر در عمل</h3>
+        <p>تصویر تجربه‌ی کار با بازار و تصمیم‌گیری در زمان واقعی.</p>
       </div>
       <div class="p-card">
-        <img src="assets/portfolio3.jpg" alt="نمونه کار 3">
-        <div class="meta">
-          <h3>نمونه کار سوم</h3>
-          <p>توضیح کوتاه درباره نمونه کار.</p>
-        </div>
+        <img src="assets/portfolio3.jpg" alt="نمونه سوم">
+        <h3>گراف مالی</h3>
+        <p>استراتژی‌های مبتنی بر داده و تحلیل روندهای بازار.</p>
       </div>
     </div>
   </section>
 
+  <!-- ارتباط با من -->
   <section id="contact">
     <h2>ارتباط با من</h2>
-    <p>📱 09120653481</p>
-    <p>✈️ <a href="https://t.me/mohammadaminfxx" target="_blank">mohammadamin.fx</a></p>
+    <div class="contact-info">
+      <p>📞 09120653481</p>
+      <p>📩 <a href="https://t.me/mohammadaminfxx" target="_blank">@mohammadamin.fx</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 MohammadAmin.FX</p>
+    <p>© 2025 mohammadamin.fx - همه حقوق محفوظ است.</p>
   </footer>
+
 </body>
 </html>
