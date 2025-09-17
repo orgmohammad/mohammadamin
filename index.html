@@ -15,10 +15,17 @@
     header h1 { margin:20px 0 0; font-size:28px; color:gold; }
     section { padding:60px 20px; }
     h2 { color:gold; margin-bottom:20px; }
-    .services, .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .card, .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
+    .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .service-card { background:#222; padding:30px 20px; border-radius:15px; width:250px; box-shadow:0 0 12px rgba(255,215,0,0.3); transition:0.3s; }
+    .service-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.6); }
+    .service-card i { font-size:40px; color:gold; margin-bottom:15px; }
+    .service-card h3 { color:gold; font-size:18px; margin:0; }
+
+    .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
     .p-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; }
     .p-card h3 { margin:15px 0 10px; color:gold; }
+
     .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
     .contact-info { margin:15px 0; font-size:18px; }
     .contact-info i { margin-right:10px; color:gold; }
@@ -64,21 +71,12 @@
   <section id="services">
     <h2>خدمات من</h2>
     <div class="services">
-      <div class="card">
-        <h3>آموزش 0 تا 100 فارکس</h3>
-        <p>یادگیری کامل بازار فارکس از مفاهیم پایه تا پیشرفته.</p>
-      </div>
-      <div class="card">
-        <h3>آموزش استراتژی شخصی</h3>
-        <p>آموزش استراتژی اختصاصی من برای معاملات دقیق‌تر.</p>
-      </div>
-      <div class="card">
-        <h3>سیگنال معاملات شخصی</h3>
-        <p>دریافت سیگنال‌های معاملاتی واقعی و شخصی من.</p>
+      <div class="service-card">
+        <i class="fas fa-book-open"></i>
+        <h3>پکیج 0 تا 100 فارکس (پراپ)</h3>
       </div>
     </div>
   </section>
-
 
   <!-- Trading Learn -->
   <section id="learn">
