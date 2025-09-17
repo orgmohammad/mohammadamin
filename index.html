@@ -15,8 +15,10 @@
     header h1 { margin:20px 0 0; font-size:28px; color:gold; }
     section { padding:60px 20px; }
     h2 { color:gold; margin-bottom:20px; }
-    .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
+    .services, .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .card, .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
+    .p-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; }
+    .p-card h3 { margin:15px 0 10px; color:gold; }
     .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
     .contact-info { margin:15px 0; font-size:18px; }
     .contact-info i { margin-right:10px; color:gold; }
@@ -24,17 +26,6 @@
     .cta-buttons a { padding:12px 20px; border-radius:30px; background:gold; color:#111; font-weight:bold; text-decoration:none; transition:0.3s; }
     .cta-buttons a:hover { background:#ffcc00; }
     footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
-
-    /* نمونه کارها */
-    #portfolio { padding:60px 20px; background:#111; }
-    #portfolio h2 { color:gold; margin-bottom:30px; }
-    .portfolio { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .p-card { background:#222; border-radius:15px; width:320px; overflow:hidden; box-shadow:0 0 12px rgba(255,215,0,0.3); transition:0.3s; }
-    .p-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
-    .p-card img { width:100%; height:200px; object-fit:cover; display:block; }
-    .p-card h3 { margin:15px 0 10px; color:gold; }
-    .p-card p { font-size:14px; padding:0 15px 20px; color:#ccc; }
-    @media (max-width:800px){ .p-card{ width:100%; max-width:420px } }
 
     /* سبک‌ها */
     #styles { background:#111; padding:60px 20px; }
@@ -88,24 +79,28 @@
     </div>
   </section>
 
-  <!-- نمونه کارها -->
-  <section id="portfolio">
-    <h2>نمونه‌کارها</h2>
+  <!-- Trading Learn -->
+  <section id="learn">
+    <h2>Trading Learn</h2>
     <div class="portfolio">
       <div class="p-card">
-        <img src="https://images.pexels.com/photos/29611783/pexels-photo-29611783.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="نمودار شمعی">
-        <h3>نتیجه معامله — نمودار</h3>
-        <p>تحلیل و اجرای استراتژی روی الگوی شمعی؛ سوددهی هدفمند.</p>
+        <a href="learn1.html">
+          <img src="https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Learn 1">
+          <h3>Learn 1</h3>
+        </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Trading Moment -->
+  <section id="moment">
+    <h2>Trading Moment</h2>
+    <div class="portfolio">
       <div class="p-card">
-        <img src="https://images.pexels.com/photos/6770609/pexels-photo-6770609.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="تریدر با لپ‌تاپ">
-        <h3>تریدر در عمل</h3>
-        <p>تصویر تجربه‌ی کار با بازار و تصمیم‌گیری در زمان واقعی.</p>
-      </div>
-      <div class="p-card">
-        <img src="https://images.pexels.com/photos/5716052/pexels-photo-5716052.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="گراف مالی">
-        <h3>گراف مالی</h3>
-        <p>استراتژی‌های مبتنی بر داده و تحلیل روندهای بازار.</p>
+        <a href="moment1.html">
+          <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Moment 1">
+          <h3>Moment 1</h3>
+        </a>
       </div>
     </div>
   </section>
@@ -116,19 +111,19 @@
     <div class="styles">
       <div class="style-card">
         <a href="ict.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/a33cc69e19a7039e80ff4048f069ee2928b0c1e9/photo_2025-09-17_06-32-40.jpg" alt="ICT">
+          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_06-32-40.jpg" alt="ICT">
           <h3>سبک ICT</h3>
         </a>
       </div>
       <div class="style-card">
         <a href="smartmoney.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/a33cc69e19a7039e80ff4048f069ee2928b0c1e9/photo_2025-09-17_06-32-31.jpg" alt="SMART MONEY">
+          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_06-32-31.jpg" alt="SMART MONEY">
           <h3>سبک SMART MONEY</h3>
         </a>
       </div>
       <div class="style-card">
         <a href="liquidity.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/60a2a72044a9e84e134a866f206d3440d36c51b8/photo_2025-09-17_13-02-56.jpg" alt="Liquidity Insight">
+          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_13-02-56.jpg" alt="Liquidity Insight">
           <h3>سبک Liquidity Insight</h3>
         </a>
       </div>
