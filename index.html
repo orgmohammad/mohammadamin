@@ -20,34 +20,38 @@
     .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
     .service-card { 
       background:#222; 
-      padding:30px 20px; 
+      padding:25px; 
+      border-radius:20px; 
+      width:260px; 
+      box-shadow:0 0 12px rgba(255,215,0,0.3); 
+      transition:0.3s; 
+      text-align:center; 
+    }
+    .service-card:hover { 
+      transform:translateY(-8px); 
+      box-shadow:0 0 20px rgba(255,215,0,0.6); 
+    }
+    .service-card i { font-size:50px; color:gold; margin-bottom:15px; }
+    .service-card h3 { margin:10px 0; color:gold; }
+
+    /* کارت‌های Learn و Moment */
+    .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .p-card { 
+      background:#222; 
+      padding:20px; 
       border-radius:15px; 
       width:250px; 
-      box-shadow:0 0 12px rgba(255,215,0,0.3);
+      box-shadow:0 0 10px rgba(255,215,0,0.3); 
       transition:0.3s; 
     }
-    .service-card i { font-size:40px; color:gold; margin-bottom:15px; }
-    .service-card h3 { color:gold; margin:0; font-size:20px; }
-    .service-card:hover { 
+    .p-card:hover { 
       transform:translateY(-8px); 
       box-shadow:0 0 18px rgba(255,215,0,0.5); 
     }
-
-    /* نمونه کار */
-    .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
     .p-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; }
     .p-card h3 { margin:15px 0 10px; color:gold; }
 
-    /* سبک‌ها */
-    #styles { background:#111; padding:60px 20px; }
-    .styles { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .style-card { background:#222; border-radius:15px; width:200px; padding:15px; transition:0.3s; box-shadow:0 0 12px rgba(255,215,0,0.3); }
-    .style-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
-    .style-card img { width:100%; height:120px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
-    .style-card h3 { color:gold; font-size:18px; margin:0; }
-
-    /* ارتباط */
+    /* تماس */
     .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
     .contact-info { margin:15px 0; font-size:18px; }
     .contact-info i { margin-right:10px; color:gold; }
@@ -56,6 +60,14 @@
     .cta-buttons a:hover { background:#ffcc00; }
 
     footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
+
+    /* سبک‌ها */
+    #styles { background:#111; padding:60px 20px; }
+    .styles { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+    .style-card { background:#222; border-radius:15px; width:200px; padding:15px; transition:0.3s; box-shadow:0 0 12px rgba(255,215,0,0.3); }
+    .style-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
+    .style-card img { width:100%; height:120px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
+    .style-card h3 { color:gold; font-size:18px; margin:0; }
   </style>
 </head>
 <body>
@@ -86,9 +98,9 @@
   <section id="services">
     <h2>خدمات من</h2>
     <div class="services">
-      <a href="package.html" style="text-decoration:none; color:inherit;">
+      <a href="services.html" style="text-decoration:none; color:inherit;">
         <div class="service-card">
-          <i class="fas fa-book-open"></i>
+          <i class="fas fa-graduation-cap"></i>
           <h3>پکیج 0 تا 100 فارکس (پراپ)</h3>
         </div>
       </a>
@@ -99,12 +111,12 @@
   <section id="learn">
     <h2>Trading Learn</h2>
     <div class="portfolio">
-      <div class="p-card">
-        <a href="learn.html">
+      <a href="learn.html" style="text-decoration:none; color:inherit;">
+        <div class="p-card">
           <img src="https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Learn">
           <h3>Learn</h3>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -112,12 +124,12 @@
   <section id="moment">
     <h2>Trading Moment</h2>
     <div class="portfolio">
-      <div class="p-card">
-        <a href="moment.html">
+      <a href="moment.html" style="text-decoration:none; color:inherit;">
+        <div class="p-card">
           <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Moment">
           <h3>Moment</h3>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   </section>
 
