@@ -1,111 +1,153 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>وبسایت من</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-white text-gray-900">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mohammadamin.fx</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; text-align:center; }
+    header { 
+      background:url('https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg') no-repeat center center/cover; 
+      padding:80px 20px; 
+    }
+    header img { width:120px; height:120px; border-radius:50%; border:3px solid gold; object-fit:cover; }
+    header h1 { margin:20px 0 0; font-size:28px; color:gold; }
+    section { padding:60px 20px; }
+    h2 { color:gold; margin-bottom:20px; }
+    .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); }
+    .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
+    .contact-info { margin:15px 0; font-size:18px; }
+    .contact-info i { margin-right:10px; color:gold; }
+    .cta-buttons { margin-top:20px; display:flex; justify-content:center; gap:15px; }
+    .cta-buttons a { padding:12px 20px; border-radius:30px; background:gold; color:#111; font-weight:bold; text-decoration:none; transition:0.3s; }
+    .cta-buttons a:hover { background:#ffcc00; }
+    footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
 
-  <!-- Header -->
-  <header class="bg-gray-900 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Mohamad FX</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:text-yellow-400">درباره من</a></li>
-          <li><a href="#portfolio" class="hover:text-yellow-400">نمونه کارها</a></li>
-          <li><a href="#services" class="hover:text-yellow-400">خدمات</a></li>
-          <li><a href="#styles" class="hover:text-yellow-400">سبک‌ها</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400">ارتباط</a></li>
-        </ul>
-      </nav>
+    /* نمونه کارها */
+    #portfolio { padding:60px 20px; background:#111; }
+    #portfolio h2 { color:gold; margin-bottom:30px; }
+    .portfolio { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+    .p-card { background:#222; border-radius:15px; width:320px; overflow:hidden; box-shadow:0 0 12px rgba(255,215,0,0.3); transition:0.3s; }
+    .p-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
+    .p-card img { width:100%; height:200px; object-fit:cover; display:block; }
+    .p-card h3 { margin:15px 0 10px; color:gold; }
+    .p-card p { font-size:14px; padding:0 15px 20px; color:#ccc; }
+    @media (max-width:800px){ .p-card{ width:100%; max-width:420px } }
+
+    /* سبک‌ها */
+    #styles { background:#111; padding:60px 20px; }
+    .styles { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+    .style-card { background:#222; border-radius:15px; width:200px; padding:15px; transition:0.3s; box-shadow:0 0 12px rgba(255,215,0,0.3); }
+    .style-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
+    .style-card img { width:100%; height:120px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
+    .style-card h3 { color:gold; font-size:18px; margin:0; }
+  </style>
+</head>
+<body>
+
+  <!-- هدر -->
+  <header>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+      <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-01_13-58-33.jpg" alt="mohammadamin.fx" class="logo">
+      <h1>mohammadamin.fx</h1>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-yellow-400 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4">به وبسایت من خوش آمدید</h2>
-    <p class="text-lg">اینجا می‌تونی با من و سبک‌های معاملاتی‌ام آشنا بشی</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-6">درباره من</h2>
-    <p class="text-center text-lg">اینجا توضیح کوتاهی درباره خودت می‌نویسی.</p>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">نمونه کارها</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-md rounded-lg p-4">نمونه کار ۱</div>
-        <div class="bg-white shadow-md rounded-lg p-4">نمونه کار ۲</div>
-        <div class="bg-white shadow-md rounded-lg p-4">نمونه کار ۳</div>
+  <!-- خدمات -->
+  <section id="services">
+    <h2>خدمات من</h2>
+    <div class="services">
+      <div class="card">
+        <h3>آموزش 0 تا 100 فارکس</h3>
+        <p>یادگیری کامل بازار فارکس از مفاهیم پایه تا پیشرفته.</p>
+      </div>
+      <div class="card">
+        <h3>آموزش استراتژی شخصی</h3>
+        <p>آموزش استراتژی اختصاصی من برای معاملات دقیق‌تر.</p>
+      </div>
+      <div class="card">
+        <h3>سیگنال معاملات شخصی</h3>
+        <p>دریافت سیگنال‌های معاملاتی واقعی و شخصی من.</p>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">خدمات</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">خدمت ۱</div>
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">خدمت ۲</div>
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">خدمت ۳</div>
-    </div>
+  <!-- درباره من -->
+  <section id="about">
+    <h2>درباره من</h2>
+    <p>
+      من محمد امین هستم؛ تریدر و مدرس بازارهای مالی با چندین سال تجربه در فارکس.
+      هدف من آموزش اصولی و ارائه استراتژی‌های شخصی‌سازی‌شده است تا معامله‌گران
+      بتونن با مدیریت ریسک صحیح، به سودآوری پایدار برسن.  
+      باور دارم موفقیت در معامله‌گری نتیجه‌ی صبر، نظم و یادگیری مستمره.
+    </p>
   </section>
 
-  <!-- ====== Trading Styles Section ====== -->
-  <section id="styles" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">سبک‌های معاملاتی من</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- ICT -->
-        <a href="ict.html" class="block bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-          <img src="images/ict.jpg" alt="ICT Trading" class="w-full h-48 object-cover">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold mb-2">ICT</h3>
-          </div>
-        </a>
-
-        <!-- Smart Money -->
-        <a href="smart-money.html" class="block bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-          <img src="images/smart-money.jpg" alt="Smart Money Trading" class="w-full h-48 object-cover">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold mb-2">SMART MONEY</h3>
-          </div>
-        </a>
-
-        <!-- Algo -->
-        <a href="algo.html" class="block bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-          <img src="images/algo.jpg" alt="Algo Trading" class="w-full h-48 object-cover">
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-semibold mb-2">ALGO</h3>
-          </div>
-        </a>
-
+  <!-- نمونه کارها -->
+  <section id="portfolio">
+    <h2>نمونه‌کارها</h2>
+    <div class="portfolio">
+      <div class="p-card">
+        <img src="https://images.pexels.com/photos/29611783/pexels-photo-29611783.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="نمودار شمعی">
+        <h3>نتیجه معامله — نمودار</h3>
+        <p>تحلیل و اجرای استراتژی روی الگوی شمعی؛ سوددهی هدفمند.</p>
+      </div>
+      <div class="p-card">
+        <img src="https://images.pexels.com/photos/6770609/pexels-photo-6770609.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="تریدر با لپ‌تاپ">
+        <h3>تریدر در عمل</h3>
+        <p>تصویر تجربه‌ی کار با بازار و تصمیم‌گیری در زمان واقعی.</p>
+      </div>
+      <div class="p-card">
+        <img src="https://images.pexels.com/photos/5716052/pexels-photo-5716052.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="گراف مالی">
+        <h3>گراف مالی</h3>
+        <p>استراتژی‌های مبتنی بر داده و تحلیل روندهای بازار.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">ارتباط با من</h2>
-    <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
-      <input type="text" placeholder="نام" class="w-full border p-3 rounded mb-4">
-      <input type="email" placeholder="ایمیل" class="w-full border p-3 rounded mb-4">
-      <textarea placeholder="پیام" class="w-full border p-3 rounded mb-4"></textarea>
-      <button type="submit" class="w-full bg-yellow-400 py-3 rounded font-bold">ارسال</button>
-    </form>
+  <!-- سبک‌ها -->
+  <section id="styles">
+    <h2>سبک‌های من</h2>
+    <div class="styles">
+      <div class="style-card">
+        <a href="ict.html">
+          <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&h=600&w=900" alt="ICT">
+          <h3>سبک ICT</h3>
+        </a>
+      </div>
+      <div class="style-card">
+        <a href="priceaction.html">
+          <img src="https://images.pexels.com/photos/7567433/pexels-photo-7567433.jpeg?auto=compress&cs=tinysrgb&h=600&w=900" alt="Price Action">
+          <h3>پرایس اکشن</h3>
+        </a>
+      </div>
+      <div class="style-card">
+        <a href="elliot.html">
+          <img src="https://images.pexels.com/photos/7681090/pexels-photo-7681090.jpeg?auto=compress&cs=tinysrgb&h=600&w=900" alt="Elliot">
+          <h3>امواج الیوت</h3>
+        </a>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <p>© 2025 Mohamad FX. تمام حقوق محفوظ است.</p>
+  <!-- ارتباط با من -->
+  <section id="contact">
+    <h2>ارتباط با من</h2>
+    <div class="contact-card">
+      <div class="contact-info"><i class="fas fa-phone"></i> 09120653481</div>
+      <div class="contact-info"><i class="fab fa-telegram"></i> <a href="https://t.me/mohammadaminfxx" target="_blank" style="color:gold">@mohammadamin.fx</a></div>
+      <div class="cta-buttons">
+        <a href="https://t.me/mohammadaminfxx" target="_blank">🚀 پیام بده</a>
+        <a href="tel:09120653481">📞 تماس بگیر</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer>
+    © 2025 mohammadamin.fx - تمامی حقوق محفوظ است
   </footer>
 
 </body>
