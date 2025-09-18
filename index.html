@@ -15,50 +15,17 @@
     header h1 { margin:20px 0 0; font-size:28px; color:gold; }
     section { padding:60px 20px; }
     h2 { color:gold; margin-bottom:20px; }
-
-    /* خدمات */
-    .services { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .service-card { 
-      background:#222; 
-      padding:25px; 
-      border-radius:20px; 
-      width:260px; 
-      box-shadow:0 0 12px rgba(255,215,0,0.3); 
-      transition:0.3s; 
-      text-align:center; 
-    }
-    .service-card:hover { 
-      transform:translateY(-8px); 
-      box-shadow:0 0 20px rgba(255,215,0,0.6); 
-    }
-    .service-card i { font-size:50px; color:gold; margin-bottom:15px; }
-    .service-card h3 { margin:10px 0; color:gold; }
-
-    /* کارت‌های Learn و Moment */
-    .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .p-card { 
-      background:#222; 
-      padding:20px; 
-      border-radius:15px; 
-      width:250px; 
-      box-shadow:0 0 10px rgba(255,215,0,0.3); 
-      transition:0.3s; 
-    }
-    .p-card:hover { 
-      transform:translateY(-8px); 
-      box-shadow:0 0 18px rgba(255,215,0,0.5); 
-    }
+    .services, .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+    .card, .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); transition:0.3s; }
+    .card:hover, .p-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
     .p-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; }
     .p-card h3 { margin:15px 0 10px; color:gold; }
-
-    /* تماس */
     .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
     .contact-info { margin:15px 0; font-size:18px; }
     .contact-info i { margin-right:10px; color:gold; }
     .cta-buttons { margin-top:20px; display:flex; justify-content:center; gap:15px; }
     .cta-buttons a { padding:12px 20px; border-radius:30px; background:gold; color:#111; font-weight:bold; text-decoration:none; transition:0.3s; }
     .cta-buttons a:hover { background:#ffcc00; }
-
     footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
 
     /* سبک‌ها */
@@ -98,12 +65,12 @@
   <section id="services">
     <h2>خدمات من</h2>
     <div class="services">
-      <a href="services.html" style="text-decoration:none; color:inherit;">
-        <div class="service-card">
-          <i class="fas fa-graduation-cap"></i>
+      <div class="card">
+        <a href="forex-package.html" style="text-decoration:none; color:inherit;">
+          <i class="fas fa-graduation-cap" style="font-size:40px; color:gold; margin-bottom:15px;"></i>
           <h3>پکیج 0 تا 100 فارکس (پراپ)</h3>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -111,12 +78,12 @@
   <section id="learn">
     <h2>Trading Learn</h2>
     <div class="portfolio">
-      <a href="learn.html" style="text-decoration:none; color:inherit;">
-        <div class="p-card">
+      <div class="p-card">
+        <a href="learn.html">
           <img src="https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Learn">
           <h3>Learn</h3>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -124,12 +91,12 @@
   <section id="moment">
     <h2>Trading Moment</h2>
     <div class="portfolio">
-      <a href="moment.html" style="text-decoration:none; color:inherit;">
-        <div class="p-card">
+      <div class="p-card">
+        <a href="moment.html">
           <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Moment">
           <h3>Moment</h3>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -158,15 +125,25 @@
     </div>
   </section>
 
-  <!-- ارتباط با من -->
+  <!-- تماس و شبکه‌ها -->
   <section id="contact">
-    <h2>ارتباط با من</h2>
+    <h2>تماس و شبکه‌ها</h2>
     <div class="contact-card">
-      <div class="contact-info"><i class="fas fa-phone"></i> 09120653481</div>
-      <div class="contact-info"><i class="fab fa-telegram"></i> <a href="https://t.me/mohammadaminfxx" target="_blank" style="color:gold">@mohammadamin.fx</a></div>
+      <div class="contact-info">
+        <i class="fab fa-telegram"></i> 
+        <a href="https://t.me/mohammadaminfxx" target="_blank" style="color:gold">
+          @mohammadamin.fx
+        </a>
+      </div>
+      <div class="contact-info">
+        <i class="fab fa-instagram"></i> 
+        <a href="https://instagram.com/mohammadamin.fx" target="_blank" style="color:gold">
+          @mohammadamin.fx
+        </a>
+      </div>
       <div class="cta-buttons">
-        <a href="https://t.me/mohammadaminfxx" target="_blank">🚀 پیام بده</a>
-        <a href="tel:09120653481">📞 تماس بگیر</a>
+        <a href="https://t.me/mohammadaminfxx" target="_blank">🚀 تلگرام</a>
+        <a href="https://instagram.com/mohammadamin.fx" target="_blank">📷 اینستاگرام</a>
       </div>
     </div>
   </section>
