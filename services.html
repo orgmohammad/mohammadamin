@@ -62,31 +62,76 @@
     </p>
   </section>
 
-  <!-- خدمات -->
-  <section id="services">
-    <h2>پکیج 0 تا 100 فارکس (پراپ)</h2>
-    <div class="services">
+   <!-- خدمات -->
+  <section id="services" style="background:linear-gradient(180deg,#111,#1a1a1a);padding:80px 20px;">
+    <h2 style="color:gold;font-size:28px;margin-bottom:40px;">پکیج 0 تا 100 فارکس (پراپ)</h2>
+    <div class="services" style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px;">
 
-      <a href="beginner.html" class="card">
-        <i class="fa-solid fa-seedling"></i>
-        <h3>سطح مبتدی</h3>
-        <p>شروع اصولی فارکس از پایه برای ورود مطمئن به بازار.</p>
+      <a href="beginner.html" class="card" style="
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,215,0,0.2);
+        padding:30px;
+        border-radius:20px;
+        width:260px;
+        text-decoration:none;
+        color:#fff;
+        transition:0.4s;
+        box-shadow:0 0 10px rgba(255,215,0,0.1);
+      ">
+        <i class="fa-solid fa-seedling" style="font-size:42px;color:gold;margin-bottom:15px;"></i>
+        <h3 style="color:gold;margin-bottom:10px;">سطح مبتدی</h3>
+        <p style="color:#ccc;">شروع اصولی فارکس از پایه برای ورود مطمئن به بازار.</p>
       </a>
 
-      <a href="intermediate.html" class="card">
-        <i class="fa-solid fa-chart-line"></i>
-        <h3>سطح نیمه‌حرفه‌ای</h3>
-        <p>درک نقدینگی، ساختار بازار و روش‌های تحلیلی پیشرفته.</p>
+      <a href="intermediate.html" class="card" style="
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,215,0,0.2);
+        padding:30px;
+        border-radius:20px;
+        width:260px;
+        text-decoration:none;
+        color:#fff;
+        transition:0.4s;
+        box-shadow:0 0 10px rgba(255,215,0,0.1);
+      ">
+        <i class="fa-solid fa-chart-line" style="font-size:42px;color:gold;margin-bottom:15px;"></i>
+        <h3 style="color:gold;margin-bottom:10px;">سطح نیمه‌حرفه‌ای</h3>
+        <p style="color:#ccc;">درک نقدینگی، ساختار بازار و روش‌های تحلیلی پیشرفته.</p>
       </a>
 
-      <a href="professional.html" class="card">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <h3>سطح حرفه‌ای</h3>
-        <p>استراتژی، روان‌شناسی و مدیریت سرمایه در ترید حرفه‌ای.</p>
+      <a href="professional.html" class="card" style="
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,215,0,0.2);
+        padding:30px;
+        border-radius:20px;
+        width:260px;
+        text-decoration:none;
+        color:#fff;
+        transition:0.4s;
+        box-shadow:0 0 10px rgba(255,215,0,0.1);
+      ">
+        <i class="fa-solid fa-graduation-cap" style="font-size:42px;color:gold;margin-bottom:15px;"></i>
+        <h3 style="color:gold;margin-bottom:10px;">سطح حرفه‌ای</h3>
+        <p style="color:#ccc;">استراتژی، روان‌شناسی و مدیریت سرمایه در ترید حرفه‌ای.</p>
       </a>
 
     </div>
+
+    <script>
+      // افکت hover کارت‌ها
+      document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-10px)';
+          card.style.boxShadow = '0 0 20px rgba(255,215,0,0.6)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'translateY(0)';
+          card.style.boxShadow = '0 0 10px rgba(255,215,0,0.1)';
+        });
+      });
+    </script>
   </section>
+
 
   <!-- بقیه بخش‌ها همون قبلی هست -->
   <!-- Trading Learn -->
