@@ -1,135 +1,277 @@
 <!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mohammadamin.fx</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#111; color:#fff; text-align:center; }
-    header { 
-      background:url('https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/HD-wallpaper-international-finance-center-center-finance-international-lights-night.jpg') no-repeat center center/cover; 
-      padding:80px 20px; 
-    }
-    header img { width:120px; height:120px; border-radius:50%; border:3px solid gold; object-fit:cover; }
-    header h1 { margin:20px 0 0; font-size:28px; color:gold; }
-    section { padding:60px 20px; }
-    h2 { color:gold; margin-bottom:20px; }
-    .services, .portfolio { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
-    .card, .p-card { background:#222; padding:20px; border-radius:15px; width:250px; box-shadow:0 0 10px rgba(255,215,0,0.3); transition:0.3s; }
-    .card:hover, .p-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
-    .p-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; }
-    .p-card h3 { margin:15px 0 10px; color:gold; }
-    .contact-card { background:#222; padding:30px; border-radius:20px; width:320px; margin:0 auto; box-shadow:0 0 15px rgba(255,215,0,0.4); }
-    .contact-info { margin:15px 0; font-size:18px; }
-    .contact-info i { margin-right:10px; color:gold; }
-    .cta-buttons { margin-top:20px; display:flex; justify-content:center; gap:15px; }
-    .cta-buttons a { padding:12px 20px; border-radius:30px; background:gold; color:#111; font-weight:bold; text-decoration:none; transition:0.3s; }
-    .cta-buttons a:hover { background:#ffcc00; }
-    footer { background:#000; padding:20px; font-size:14px; color:#aaa; }
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PXR — Mohamad Amin Esmaeili</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/1e09b9b6b0.js" crossorigin="anonymous"></script>
+   <style>
+  body {
+    transition: background 0.5s, color 0.5s;
+    background: url("https://raw.githubusercontent.com/orgmohammad/test/6b88579234e42355ce3c7d945c2e11a2f2fabf58/photo_2025-10-25_06-29-40.jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+    color: #111;
+  }
 
-    /* سبک‌ها */
-    #styles { background:#111; padding:60px 20px; }
-    .styles { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .style-card { background:#222; border-radius:15px; width:200px; padding:15px; transition:0.3s; box-shadow:0 0 12px rgba(255,215,0,0.3); }
-    .style-card:hover { transform:translateY(-8px); box-shadow:0 0 18px rgba(255,215,0,0.5); }
-    .style-card img { width:100%; height:120px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
-    .style-card h3 { color:gold; font-size:18px; margin:0; }
-  </style>
-</head>
-<body>
+  .dark {
+    background: url("https://raw.githubusercontent.com/orgmohammad/test/6b88579234e42355ce3c7d945c2e11a2f2fabf58/photo_2025-10-25_06-29-40.jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+    color: #f3f3f3;
+    backdrop-filter: brightness(0.8);
+  }
 
-  <!-- هدر -->
-  <header>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
-      <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-01_13-58-33.jpg" alt="mohammadamin.fx" class="logo">
-      <h1>mohammadamin.fx</h1>
-    </div>
-  </header>
+ .btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.4);
+  }
 
-  <!-- درباره من -->
-  <section id="about">
-    <h2>درباره من</h2>
-    <p>
-      من محمد امین اسماعیلی هستم؛ تریدر در بازار فارکس با بیش از سه سال تجربه‌ی مستمر در این حوزه.  
-      در طول این مسیر، با تلاش و پشتکار توانسته‌ام استراتژی و سبک شخصی‌سازی‌شده‌ی خودم را توسعه بدهم؛  
-      سبکی که متناسب با شخصیت و دیدگاه من در بازار است و به من کمک می‌کند معاملاتم را با مدیریت ریسک و نظم بالا پیش ببرم.
-    </p>
-    <p>
-      علاوه بر فعالیت در بازار، به عنوان مدرس و منتور نیز تجربه دارم و علاقه‌مندم دانش و تجربیاتم را در اختیار دیگران قرار دهم  
-      تا مسیر یادگیری آن‌ها سریع‌تر و مطمئن‌تر طی شود. باور دارم موفقیت در بازارهای مالی تنها با ترکیبی از دانش، تمرین و ذهنیت درست به دست می‌آید.
-    </p>
-  </section>
+  /* 🎨 افکت و رنگ آبی مخصوص اسم و توضیحات */
+  #title {
+    color: #3b82f6; /* آبی خاص */
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.6),
+                 0 0 20px rgba(59, 130, 246, 0.4);
+    transition: all 0.4s ease;
+  }
+
+  body.dark #title {
+    color: #60a5fa;
+    text-shadow: 0 0 15px rgba(96, 165, 250, 0.8),
+                 0 0 25px rgba(96, 165, 250, 0.5);
+  }
+
+  #subtitle {
+    color: #2563eb; /* آبی ملایم‌تر */
+    text-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+    transition: all 0.4s ease;
+  }
+
+  body.dark #subtitle {
+    color: #93c5fd;
+    text-shadow: 0 0 10px rgba(147, 197, 253, 0.6);
+  }
+     /* 🎨 استایل متن درباره من */
+#aboutText {
+  color: #ffffff; /* سفید خالص */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5),
+               0 0 16px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* در حالت تاریک (کمی درخشان‌تر بشه) */
+body.dark #aboutText {
+  color: #f9fafb;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.7),
+               0 0 20px rgba(255, 255, 255, 0.5);
+}
+     /* 🎨 استایل عنوان درباره من */
+#aboutTitle {
+  color: #8b5cf6; /* بنفش-آبی لوکس */
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.6),
+               0 0 20px rgba(147, 51, 234, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* حالت تاریک — کمی درخشان‌تر */
+body.dark #aboutTitle {
+  color: #a78bfa;
+  text-shadow: 0 0 14px rgba(167, 139, 250, 0.8),
+               0 0 25px rgba(167, 139, 250, 0.5);
+}
+     
+/* 🎨 استایل منوی انتخاب زبان */
+#lang {
+  background: rgba(30, 30, 40, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(147, 51, 234, 0.4);
+  color: #e0e0ff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(76, 29, 149, 0.3);
+}
+
+/* وقتی موس روش میره */
+#lang:hover {
+  background: rgba(76, 29, 149, 0.4);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}
+
+/* حالت تاریک */
+body.dark #lang {
+  background: rgba(20, 20, 30, 0.7);
+  color: #c7d2fe;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+/* حالت تاریک - هاور */
+body.dark #lang:hover {
+  background: rgba(88, 28, 135, 0.6);
+  box-shadow: 0 0 18px rgba(147, 51, 234, 0.7);
+}
+
+</style>
 
 
-  <!-- Trading Learn -->
-  <section id="learn">
-    <h2>Trading Learn</h2>
-    <div class="portfolio">
-      <div class="p-card">
-        <a href="learn.html">
-          <img src="https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Learn">
-          <h3>Learn</h3>
-        </a>
+  <body class="font-sans">
+    <!-- HEADER -->
+    <header
+      class="flex justify-between items-center px-6 py-4 gradient text-white shadow-lg"
+    >
+      <h1 class="text-xl font-bold">PXR</h1>
+      <div class="flex items-center gap-3">
+        <select
+          id="lang"
+          class="bg-transparent border border-gray-500 rounded px-2 py-1 text-sm"
+        >
+          <option value="fa">فارسی</option>
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+        </select>
+        <button
+          id="themeToggle"
+          class="p-2 rounded bg-white/20 hover:bg-black/30 transition"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Trading Moment -->
-  <section id="moment">
-    <h2>Trading Moment</h2>
-    <div class="portfolio">
-      <div class="p-card">
-        <a href="moment.html">
-          <img src="https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="Moment">
-          <h3>Moment</h3>
-        </a>
+    <!-- HERO -->
+    <section
+      class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-12 md:px-16 md:py-20 transition-all"
+    >
+      <div class="max-w-xl space-y-4">
+        <h2 id="title" class="text-3xl md:text-5xl font-bold leading-tight"></h2>
+        <p id="subtitle" class="text-gray-600 dark:text-gray-300 text-lg"></p>
+        <div class="flex gap-4 mt-6">
+          <a
+            href="https://instagram.com/mohammadamin.fx"
+            target="_blank"
+            class="btn flex items-center gap-2 bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-3 rounded-full font-semibold"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://t.me/mohammadaminfxx"
+            target="_blank"
+            class="btn flex items-center gap-2 bg-gradient-to-r from-blue-500 to-sky-500 text-white px-5 py-3 rounded-full font-semibold"
+          >
+            <i class="fab fa-telegram-plane"></i> Telegram
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- سبک‌ها -->
-  <section id="styles">
-    <h2>سبک‌های من</h2>
-    <div class="styles">
-      <div class="style-card">
-        <a href="ict.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_06-32-40.jpg" alt="ICT">
-          <h3> ICT</h3>
-        </a>
+      <div class="relative mb-10 md:mb-0">
+        <img
+          src="photo_2025-10-22_10-57-52.jpg"
+          alt="Mohamad Amin Esmaeili"
+          class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-2xl shadow-2xl border border-gray-700"
+        />
+        <div
+          class="absolute -bottom-6 -right-6 w-64 h-64 bg-purple-600/40 blur-3xl rounded-full animate-pulse"
+        ></div>
       </div>
-      <div class="style-card">
-        <a href="smartmoney.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_06-32-31.jpg" alt="SMART MONEY">
-          <h3> SMART MONEY</h3>
-        </a>
-      </div>
-      <div class="style-card">
-        <a href="liquidity.html">
-          <img src="https://raw.githubusercontent.com/orgmohammad/mohammadamin/main/photo_2025-09-17_13-02-56.jpg" alt="Liquidity Insight">
-          <h3> Liquidity Insight</h3>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- تماس و شبکه‌ها -->
-  <section id="contact">
-    <h2>تماس و شبکه‌ها</h2>
-    <div class="contact-card">
-      <div class="contact-info"><i class="fab fa-telegram"></i> <a href="https://t.me/mohammadaminfxx" target="_blank" style="color:gold">@mohammadamin.fx</a></div>
-      <div class="contact-info"><i class="fab fa-instagram"></i> <a href="https://instagram.com/mohammadamin.fx" target="_blank" style="color:gold">@mohammadamin.fx</a></div>
-      <div class="cta-buttons">
-        <a href="https://t.me/mohammadaminfxx" target="_blank">🚀 پیام در تلگرام</a>
-        <a href="https://instagram.com/mohammadamin.fx" target="_blank">📷 اینستاگرام</a>
-      </div>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section class="px-6 md:px-16 py-10" id="about">
+      <h3 class="text-2xl font-bold mb-4" id="aboutTitle"></h3>
+      <p
+        id="aboutText"
+        class="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line"
+      ></p>
+    </section>
 
-  <!-- فوتر -->
-  <footer>
-    © 2025 mohammadamin.fx - تمامی حقوق محفوظ است
-  </footer>
+    <!-- FOOTER -->
+    <footer
+      class="py-6 text-center text-sm text-blue-500 dark:text-blue-400 border-t border-blue-200 dark:border-blue-800"
+    >
+      © <span id="year"></span> Mohamad Amin Esmaeili — PXR
+    </footer>
 
-</body>
+    <script>
+      // --- Text translations ---
+      const translations = {
+        fa: {
+          title: "محمد امین اسماعیلی  بنیان‌گذار سبک معاملاتی PXR",
+          subtitle:
+            "PXR ترکیبی از Smart Money، ICT و Liquidity Insight است که ساده‌ترین الگوها را با عمیق‌ترین مفاهیم ترکیب می‌کند.",
+          aboutTitle: "درباره من",
+          aboutText: `من محمد امین اسماعیلی هستم — بنیان‌گذار سبک معاملاتی PXR.
+با بیش از ۳ سال تجربه در بازار فارکس، سبکی را توسعه دادم که تلفیقی از Smart Money + ICT + Liquidity Insight است.
+در این سبک، شما با الگوهای ساده‌ای مثل ترند لاین وارد معامله می‌شوید اما پشت صحنه‌ی همان شکست، MSS و OB قرار دارد.
+من مسیر ۳ ساله‌ی خودم را برای شما در کمتر از ۳ ماه جمع کرده‌ام تا سریع‌تر به درک و سودآوری برسید.`,
+        },
+        en: {
+          title: "Mohamad Amin Esmaeili — Founder of PXR",
+          subtitle:
+            "PXR blends Smart Money, ICT & Liquidity Insight into clear, repeatable patterns for consistent results.",
+          aboutTitle: "About Me",
+          aboutText: `I'm Mohamad Amin Esmaeili — founder of the PXR trading method.
+After 3+ years in Forex, I combined Smart Money + ICT + Liquidity Insight into one unified, easy-to-learn strategy.
+In PXR, you trade simple setups like a trendline break, while behind it MSS and OB structure confirm the logic.
+I’ve condensed my 3-year journey into a 3-month learning path to help traders reach clarity faster.`,
+        },
+        ar: {
+          title: "محمد أمين إسماعيلي — مؤسس PXR",
+          subtitle:
+            "PXR يجمع بين Smart Money و ICT وفهم السيولة لتكوين أنماط بسيطة وفعّالة.",
+          aboutTitle: "عني",
+          aboutText: `أنا محمد أمين إسماعيلي — مؤسس أسلوب التداول PXR.
+بخبرة أكثر من ثلاث سنوات في الفوركس، دمجت Smart Money و ICT وفهم السيولة في أسلوب واحد عملي وسهل.
+في PXR، تتداول باستخدام أنماط بسيطة مثل كسر الترندلاين، لكن وراءها MSS و OB يدعمان القرار.
+اختصرت تجربتي التي دامت ثلاث سنوات في ثلاثة أشهر فقط لتصل إلى فهم وربح أسرع.`,
+        },
+      };
+
+      // --- Elements ---
+      const langSelect = document.getElementById("lang");
+      const themeToggle = document.getElementById("themeToggle");
+      const yearEl = document.getElementById("year");
+
+      const applyLang = (lang) => {
+        const t = translations[lang];
+        document.getElementById("title").textContent = t.title;
+        document.getElementById("subtitle").textContent = t.subtitle;
+        document.getElementById("aboutTitle").textContent = t.aboutTitle;
+        document.getElementById("aboutText").textContent = t.aboutText;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "en" ? "ltr" : "rtl";
+      };
+
+      // --- Theme ---
+      let darkMode = false;
+      themeToggle.addEventListener("click", () => {
+        darkMode = !darkMode;
+        document.body.classList.toggle("dark", darkMode);
+        themeToggle.innerHTML = darkMode
+          ? '<i class="fas fa-sun"></i>'
+          : '<i class="fas fa-moon"></i>';
+      });
+
+      // --- Language change ---
+      langSelect.addEventListener("change", (e) => applyLang(e.target.value));
+
+      // --- Initialize ---
+      yearEl.textContent = new Date().getFullYear();
+      applyLang("fa");
+
+      // --- Animations ---
+      ScrollReveal().reveal("section", {
+        distance: "40px",
+        origin: "bottom",
+        duration: 1000,
+        easing: "ease-out",
+        interval: 200,
+      });
+    </script>
+  </body>
 </html>
